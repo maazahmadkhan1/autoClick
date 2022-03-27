@@ -1,7 +1,7 @@
 {
-  "name": "Safeguard",
+  "name": "Auto Click",
   "version": "1.0",
-  "description": "Safeguard!",
+  "description": "Auto Click!",
   "permissions": ["activeTab", "tabs", "storage"],
   "background": {
     "service_worker": "sw.js"
@@ -18,7 +18,8 @@
     {
       "matches": ["http://*/*", "https://*/*"],
       "js": ["vendor/js/jquery.min.js", "content/content.js"],
-      "run_at": "document_end"
+      "run_at": "document_end",
+      "all_frames": true
     }
   ],
   "icons": {

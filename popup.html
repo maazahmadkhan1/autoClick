@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Classroom Launcher</title>
+    <title>Auto Click</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
@@ -9,8 +9,8 @@
     <style>
         body {
             height: 230px;
-            width: 320px;
-            background-color: #EBEBEB;
+            width: 430px;
+            background-color: #509bc7;
         }
         .count {
         	margin: 0 auto;
@@ -29,37 +29,16 @@
                 <div class="close" id="close">
                     <i class="fa fa-times close" aria-hidden="true"></i>
                 </div>
-            </div>
-            <div class="activate">
-            	<div class="alert alert-danger error text-center" style="display: none;">
-            		
-            	</div>
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                        <div class="form-group">          
-                            <div class="row">
-                            	<div class="col-md-12">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="count">Total Links : <span id="total">0</span></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="d-flex justify-content-between">
-                                        <button class="btn btn-primary w-100 mb-2" id="add">Add Buttons</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="d-flex justify-content-between">
-                                        <button class="btn btn-success" id="save">Download CSV</button>
-                                        <button class="btn btn-danger" id="delete">Delete/Clear</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 mt-3">
+                    <span style="font-size: 15px;">What is the privacy policy saying?</span>
                 </div>
-            </div>         
-        </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3">
+                    <span class="url" style="font-size: 12px;"></span>
+                    <label style="font-size: 11px;">I have an account</label>
+                    <input type="checkbox" name="account" id="account"> 
+                </div>
+            </div>
+        </div>        
     </div>
 </body>
 <script src="vendor/js/jquery.min.js"></script>
