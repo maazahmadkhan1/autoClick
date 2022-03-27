@@ -1,0 +1,30 @@
+{
+  "name": "Safeguard",
+  "version": "1.0",
+  "description": "Safeguard!",
+  "permissions": ["activeTab", "tabs", "storage"],
+  "background": {
+    "service_worker": "sw.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "assets/images/icon_16.png",
+      "48": "assets/images/icon_48.png",
+      "128": "assets/images/icon_128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["vendor/js/jquery.min.js", "content/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "assets/images/icon_16.png",
+    "48": "assets/images/icon_48.png",
+    "128": "assets/images/icon_128.png"
+  },
+  "manifest_version": 3
+}
