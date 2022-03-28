@@ -11,8 +11,7 @@
       "16": "assets/images/icon_16.png",
       "48": "assets/images/icon_48.png",
       "128": "assets/images/icon_128.png"
-    },
-    "default_popup": "popup.html"
+    }
   },
   "content_scripts": [
     {
@@ -27,5 +26,11 @@
     "48": "assets/images/icon_48.png",
     "128": "assets/images/icon_128.png"
   },
+  "web_accessible_resources": [{
+    "resources": [
+      "popup.html"
+    ],
+    "matches": ["http://*/*", "https://*/*"]
+  }],
   "manifest_version": 3
 }
