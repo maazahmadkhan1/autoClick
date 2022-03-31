@@ -29,3 +29,22 @@ chrome.runtime.onMessage.addListener(function(req, sender, sendResponse){
   	}
 	return true;
 });
+
+$(document).ready(function () {
+  $(document).on("click", "button", function () {
+    console.log($(this).text());
+    if ($(this).text().toLowerCase() == "login" && $(this).text().toLowerCase() == "log in" && $(this).text().toLowerCase() == "sign in") {
+      console.log("login");
+    } else if ($(this).text().toLowerCase() == "register" && $(this).text().toLowerCase() == "sign up") {
+      console.log("register");
+    }
+  });
+  $(document).on("click", "input[type='submit']", function () {
+    console.log($(this).text());
+    if ($(this).text().toLowerCase() == "login" && $(this).text().toLowerCase() == "log in" && $(this).text().toLowerCase() == "sign in") {
+      console.log("login");
+    } else if ($(this).text().toLowerCase() == "register" && $(this).text().toLowerCase() == "sign up") {
+      console.log("register");
+    }
+  });
+});
