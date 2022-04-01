@@ -34,17 +34,25 @@ $(document).ready(function () {
   $(document).on("click", "button", function () {
     console.log($(this).text());
     if ($(this).text().toLowerCase() == "login" && $(this).text().toLowerCase() == "log in" && $(this).text().toLowerCase() == "sign in") {
-      console.log("login");
+      var elems = document.querySelectorAll("*"),
+      res = Array.from(elems).find(v => v.textContent.toLowerCase() == 'name' || v.textContent.toLowerCase() == 'email');  
+      console.log(res ? 'found!' : 'not found');
     } else if ($(this).text().toLowerCase() == "register" && $(this).text().toLowerCase() == "sign up") {
-      console.log("register");
+      var elems = document.querySelectorAll("*"),
+      res = Array.from(elems).find(v => v.textContent.toLowerCase() == 'name' || v.textContent.toLowerCase() == 'email');  
+      console.log(res ? 'found!' : 'not found');
     }
   });
   $(document).on("click", "input[type='submit']", function () {
     console.log($(this).text());
     if ($(this).text().toLowerCase() == "login" && $(this).text().toLowerCase() == "log in" && $(this).text().toLowerCase() == "sign in") {
-      console.log("login");
+      var elems = document.querySelectorAll("*"),
+      res = Array.from(elems).find(v => v.textContent.toLowerCase() == 'name' || v.textContent.toLowerCase() == 'email');  
+      console.log(res ? 'found!' : 'not found');
     } else if ($(this).text().toLowerCase() == "register" && $(this).text().toLowerCase() == "sign up") {
-      console.log("register");
+      var elems = document.querySelectorAll("*"),
+      res = Array.from(elems).find(v => v.textContent.toLowerCase() == 'name' || v.textContent.toLowerCase() == 'email');  
+      console.log(res ? 'found!' : 'not found');
     }
   });
 });
