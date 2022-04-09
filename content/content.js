@@ -1,5 +1,5 @@
 let have_an_account = false;
-let keywords =['name','login','email','signin','pay','card','cvv','password','checkout','paypal','cvc','order','account','signup','username'];
+let keywords =['name','login','email','signin','pay','card','cvv','password','checkout','paypal','cvc','order','account','signup','username','continue'];
 chrome.runtime.onMessage.addListener(function(req, sender, sendResponse){
 	if (req.msg == "giveDomain") {
 		var url = window.location.hostname;
