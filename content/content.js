@@ -19,9 +19,11 @@ $(document).ready(function () {
        }
      })
     })
-    document.querySelectorAll('input[type="button"]','input[type="submit"]','button').forEach((input,index)=>{
+
+    document.querySelectorAll('input[type="button"]','input[type="submit"]','button','a').forEach((input,index)=>{
 
       input.addEventListener('click',function(){
+        console.log(input.innerText.toLowerCase().trim());
         if(keywords.indexOf(input.innerText.toLowerCase().trim())){
           saveDomain();
         }
