@@ -6,7 +6,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
 		}
 		$(".url").text(url);
 		chrome.storage.local.get('domains',({domains})=>{
-			console.log(domains);
+			// console.log(domains);
 			if(domains !== undefined && domains.indexOf(response)>-1){
 
 				$('#have_an_account').attr('checked',true);
